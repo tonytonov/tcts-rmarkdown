@@ -1,0 +1,90 @@
+---
+title: "R Markdown"
+author: "Anton Antonov"
+date: 'Saturday, April 25, 2015 <br><img src="tcts_logo.png" alt="Logo here" width=128 height=128>'
+output: 
+  revealjs::revealjs_presentation:
+    theme: solarized
+    center: false
+---
+
+## Reprodicuble research
+
+>- [The "Duke saga"](http://www.economist.com/node/21528593)
+>- Linear regression -- so simple!
+>- Now: 
+    + Complex models, (pre-)processing tools
+    + Huge amounts of data (TB)
+    + Research impact, show how you do it
+    + Internet services
+>- [Ropensci reproducibility guide](http://ropensci.github.io/reproducibility-guide/)
+
+## R Markdown, links
+
+>- [Rmarkdown official documentation](http://rmarkdown.rstudio.com/)
+>- [Supercool cheatsheet](http://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+>- [Complete reference](http://www.rstudio.com/wp-content/uploads/2015/03/rmarkdown-reference.pdf)
+>- [github repository](https://github.com/rstudio/rmarkdown)
+>- [Stack Overflow tag](http://stackoverflow.com/questions/tagged/rmarkdown)
+
+## R + <u>markdown</u> + ...
+
+Markdown: plain text -> formatted HTML
+
+. . .
+
+Output types:
+
+>- HTML
+>- PDF (LaTeX)
+>- doc (MS Word/OpenOffice/LibreOffice)
+>- presentations (Beamer, ioslides, Slidy, reveal.js)
+
+. . .
+
+(demo)
+
+## <u>R</u> + markdown + ...
+
+R code can be embedded directly to the document:  
+"Hi, today's value of $\pi$ is `r pi`!"
+
+. . .
+
+>- **Inline code** or **code chunks** with _options:_
+    + eval/echo
+    + warning/error/message
+    + tidy/results
+    + cache
+    + fig.width/fig.height
+>- `knitr` is awesome (therefore "Knit" button in RStudio)
+
+. . .
+
+(demo)
+
+## R + markdown + <u>...</u>
+
+Additional features:
+
+>- math equations $i \hbar \frac{\partial}{\partial t}\Psi = \hat H \Psi$
+>- multiple output formats with minimal changes 
+>- YAML header and templates
+>- full power of HTML/CSS
+>- bonus: htmlwidgets
+
+. . .
+
+(demo)
+
+## Your turn!
+
+Prepare a report with these elements:
+
+* plain markdown formatting
+* R code chunk with custom options
+* some image
+
+Use the [cheatsheet](http://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf), [documentation](http://rmarkdown.rstudio.com/), [my github repository](https://github.com/tonytonov/tstc-rmarkdown) and your imagination.
+
+Good luck!

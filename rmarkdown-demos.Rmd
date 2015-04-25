@@ -1,0 +1,96 @@
+<!--
+---
+title: "R Markdown Demo"
+author: "Anton Antonov"
+date: "Saturday, April 25, 2015"
+output:
+  html_document:
+    css: custom.css
+    toc: yes
+  pdf_document:
+    number_sections: yes
+    toc: yes
+---
+-->
+<!--
+  ioslides_presentation:
+    widescreen: yes
+-->
+
+
+# Science, I'm coming for you!
+
+I am so excited to present my breakthrough research in quantum theory. 
+
+## Theoretical basis
+
+Let's imagine a **cat**. Not just any *random cat*, but a decent scientific one!
+
+Like this:
+
+![Chemistry cat][cat]
+
+[cat]: cat2.jpg "Do you love chemistry?"
+
+This cat is 
+
+* fluffy
+* ~~black~~ white
+
+Cats and science have been together for a long time, e.g. [Schrödinger's cat](http://en.wikipedia.org/wiki/Schr%C3%B6dinger's_cat).
+
+That's enough for the first page. <sub> No one likes too much text. </sub>
+
+-----
+
+## R to the rescue
+
+We are using `library(knitr)` to make some calculations in R and put them here.
+
+For instance, take the well known `iris` dataset. 
+It is a data frame that consists of ```r ncol(iris)``` columns (variables) 
+and ```r nrow(iris)``` rows (observations). 
+
+It starts like so:
+```{r}
+head(iris)
+```
+
+I'd like to calculate variable means across groups. Here's the code I use:
+```{r, eval=FALSE}
+aggregate(subset(iris, select = -Species), iris[, "Species", drop = FALSE], mean)
+```
+
+Here's the output I get:
+```{r, echo=FALSE}
+aggregate(subset(iris, select = -Species), iris[, "Species", drop = FALSE], mean)
+```
+
+I can embed plots!
+```{r, message=FALSE, fig.height=6, fig.width=8}
+library(ggplot2)
+ggplot(iris, aes(x = Sepal.Length, y = Sepal.Width, color = Species)) +
+  geom_point(size = 4)
+```
+
+There's a `cache` option for lengthy computations. 
+```{r long_calc, cache=TRUE, echo=FALSE}
+sum <- 0
+for (i in 1:400) {
+  Sys.sleep(0.01)
+  sum <- sum + rnorm(1)
+}
+paste0("Result: ", sum)
+
+```
+
+## Bonus
+
+```{r leaflet}
+library(leaflet)
+leaflet() %>% 
+  addTiles() %>% 
+  setView(30.34701, 59.92359, zoom = 16) %>%
+  addPopups(30.34701, 59.92359, 'We are here <em>somewhere.</em>')
+```
+
