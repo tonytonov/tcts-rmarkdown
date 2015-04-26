@@ -4,6 +4,8 @@ This repo contains materials from my talk about rmarkdown for http://tcts.cogito
 
 Feel free to play around both .Rmd sources. Original HTML/PDF versions of both presentation and demo are also there.
 
+Note that github preview won't display .Rmd/HTML correctly, either clone the repo or download .zip and open locally.
+
 To build from source, you'll need the following dependencies:
 
 * `rmarkdown` (> 0.3.11)
