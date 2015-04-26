@@ -83,8 +83,12 @@ Prepare a report with these elements:
 
 * plain markdown formatting
 * R code chunk with custom options
-* some image
+* some image (static or generated)
+
+. . .
 
 Use the [cheatsheet](http://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf), [documentation](http://rmarkdown.rstudio.com/), [my github repository](https://github.com/tonytonov/tstc-rmarkdown) and your imagination.
 
 Good luck!
+
+[https://github.com/tonytonov/tstc-rmarkdown](https://github.com/tonytonov/tstc-rmarkdown)
