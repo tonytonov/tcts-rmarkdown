@@ -6,9 +6,9 @@ Feel free to play around both .Rmd sources. Original HTML/PDF versions of both p
 
 To build from source, you'll need the following dependencies:
 
-* rmarkdown (> 0.3.11)
-* devtools (> 1.7.0)
+* `rmarkdown` (> 0.3.11)
+* `devtools` (> 1.7.0)
 * `devtools::install_github("jjallaire/revealjs")` (reveal.js template for rmarkdown)
-* ggplot2 (> 1.0.0)
-* htmlwidgets (> 0.3.2)
+* `ggplot2` (> 1.0.0)
+* `htmlwidgets` (> 0.3.2)
 * `devtools::install_github("rstudio/leaflet")` (leaflet package for interactive maps)
