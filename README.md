@@ -1,4 +1,4 @@
-# tstc-rmarkdown
+# tcts-rmarkdown
 
 This repo contains materials from my talk about rmarkdown for http://tcts.cogitoergo.ru/#gradschool (25.04.15).
 
