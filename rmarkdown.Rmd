@@ -87,7 +87,7 @@ Prepare a report with these elements:
 
 . . .
 
-Use the [cheatsheet](http://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf), [documentation](http://rmarkdown.rstudio.com/), [my github repository](https://github.com/tonytonov/tstc-rmarkdown) and your imagination.
+Use the [cheatsheet](http://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf), [documentation](http://rmarkdown.rstudio.com/), [my github repository](https://github.com/tonytonov/tcts-rmarkdown) and your imagination.
 
 Good luck!
 
